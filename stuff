@@ -1,0 +1,62 @@
+import java.util.*; 
+class Main {
+  public static void main(String[]args) {
+    char userLocation = 'X'; 
+    char computerLocation = 'O';
+    char [][] newBoard = {{' ','|',' ','|',' '},
+            {'-','-','-','-','-'},
+            {' ','|',' ','|',' '},
+            {'-','-','-','-','-'},
+            {' ','|',' ','|',' '}}; 
+            getBoard(newBoard); 
+            //could use read
+    Scanner sc = new Scanner(System.in);
+    int newPos = sc.nextInt(); 
+  if(newPos == newBoard[0][0]) {
+    System.out.println(userLocation); 
+  } else if(newPose == newBoard[0][3]) {
+      System.out.println(userLocation); 
+  }  else if(newPose == newBoard[0][5]) {
+  System.out.println(userLocation); 
+  }  else if(newPose == newBoard[2][0]) {
+  System.out.println(userLocation); 
+  }  else if(newPose == newBoard[2][3]) {
+  System.out.println(userLocation); 
+  }  else if(newPose == newBoard[2][5]) {
+  System.out.println(userLocation); 
+  }  else if(newPose == newBoard[4][0]) {
+  System.out.println(userLocation); 
+  } else if(newPose == newBoard[4][3]) {
+  System.out.println(userLocation); 
+  } else if(newPose == newBoard[4][5]) {
+  System.out.println(userLocation); 
+  }
+
+
+  }
+public static void getBoard(char[][]newBoard) {
+for(char[]newRow : newBoard) {
+      for(char w : newRow) {
+        System.out.print(w); 
+      }
+      System.out.println(); 
+    }
+            }
+  public static void getWinner() {
+    //set rows/diag/col to newBoard[][]
+    char [] row = {newBoard[0][0], newBoard[0][3], newBoard[0][5]}; 
+    char[] row2 = {}; 
+    char[] row3 = {}; 
+    char [] diag = {}; 
+    char[] diag2 = {}; 
+    char[] diag3 = {}; 
+    char [] col = {}; 
+    char[] col2 = {}; 
+    char[] col3 = {}; 
+    //!contain checks 'O' or 'X'
+   if(!row.contains()) {
+
+  }
+  }
+
+}
