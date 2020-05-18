@@ -1,17 +1,21 @@
 import java.util.*; 
 class Main {
   public static void main(String[]args) {
+    // user is x
     char userLocation = 'X'; 
+    //computer is o
     char computerLocation = 'O';
+    //sets board
     char [][] newBoard = {{' ','|',' ','|',' '},
             {'-','-','-','-','-'},
             {' ','|',' ','|',' '},
             {'-','-','-','-','-'},
             {' ','|',' ','|',' '}}; 
             getBoard(newBoard); 
-            //could use read
+            //could use read but idk
     Scanner sc = new Scanner(System.in);
     int newPos = sc.nextInt(); 
+    //could use switch cause this looks gey
   if(newPos == newBoard[0][0]) {
     System.out.println(userLocation); 
   } else if(newPose == newBoard[0][3]) {
@@ -35,6 +39,7 @@ class Main {
 
   }
 public static void getBoard(char[][]newBoard) {
+//enhanced for loop prints board
 for(char[]newRow : newBoard) {
       for(char w : newRow) {
         System.out.print(w); 
