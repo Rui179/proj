@@ -28,14 +28,14 @@ class Main {
   boolean done = true;
   while (done) {
     //User Move
-    boolean geyUser = false;
-    while(!geyUser){
+    boolean User = false;
+    while(!User){
 
       System.out.println("Row");
       row = sc.nextInt(); 
       System.out.println("Column");
       column = sc.nextInt();
-      geyUser = (check(row, column, used));
+      User = (check(row, column, used));
     }
     used[row-1][column-1] = true;
     newBoard[2 * (row-1)][2 * (column - 1)] = 'X';
@@ -52,9 +52,9 @@ class Main {
 
     //Bot Move
     if(done){
-    boolean geyBot = false;
-    while (!geyBot){
-      geyBot = bot.botMove(used);
+    boolean Bot = false;
+    while (!Bot){
+      Bot = bot.botMove(used);
       }
       used[bot.getRow() - 1][bot.getColumn() - 1] = true;
       newBoard[2 * (bot.row - 1)][2 * (bot.column - 1)] = 'O';
